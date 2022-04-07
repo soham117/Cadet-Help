@@ -12,6 +12,11 @@
 
 
     <title>Request</title>
+    <script>
+        function myFunction() {
+            alert("Your help is registered")
+        }
+    </script>
 </head>
 
 <body>
@@ -138,7 +143,8 @@
         <H1>Ask for help</H1>
     </div>
     <div class="col-lg-8">
-        <form class="form-contact contact_form" action="" id="contactForm" novalidate="novalidate">
+        <form class="form-contact contact_form" action="request.html" method="post" id="contactForm"
+            novalidate="novalidate">
             <div class="row">
                 <div class="col-12" data-aos="zoom-out-left">
                     <div class="form-group">
@@ -169,18 +175,19 @@
                 </div>
             </div>
             <div class="form-group mt-3">
-                <button type="submit" onclick="" class="button button-contactForm btn_1">Send Message</button>
+                <button onclick="myFunction()" type="submit" class="button button-contactForm btn_1" id='myBtn'> Request</button>
             </div>
         </form>
     </div>
 
+    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- : Bootstrap Bundle with Popper -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <!-- Option : Separate Popper and Bootstrap JS -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
@@ -196,8 +203,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script
-        <script src="submitReq.js"></script>
 </body>
 
 </html>
