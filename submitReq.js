@@ -18,16 +18,15 @@ function submitForm(e) {
   var email = getElementbyid("email"); //name,email,number,message
   var number = getElementbyid("number");
 
-
-  console.log(name, email, number, message);
+  console.log(message,name, email, number);
 }
 saveMessage(name, email, number, message);
-const saveMessage = (name, email, number, message) => {
+const saveMessage = (message,name, email, number) => {
   var newContactForm = contactFormDB.push();
   newContactForm.set({
+    message: message,
     name: name,
     email: email,
-    message: message,
     number: number,
   });
 };
