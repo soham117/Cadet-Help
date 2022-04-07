@@ -13,10 +13,11 @@ var contactFormDB = firebase.database.ref("contactForm");
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 function submitForm(e) {
   e.preventDefault();
+  var message = getElementbyid("message");
   var name = getElementbyid("name");
   var email = getElementbyid("email"); //name,email,number,message
   var number = getElementbyid("number");
-  var message = getElementbyid("message");
+
 
   console.log(name, email, number, message);
 }
